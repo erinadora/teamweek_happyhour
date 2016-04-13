@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Your description goes here">
+	<meta name="keywords" content="one, two, three">
+	<title>Happy PdX</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../css/style.css">
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://oauth.googlecode.com/svn/code/javascript/oauth.js"></script>
+	<script type="text/javascript" src="http://oauth.googlecode.com/svn/code/javascript/sha1.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaMGPMM2MLt3v7twIapog8PLckj8t2U8I" async defer></script>
+	<script src="../googleMaps.js"></script>
+	<script src="../yelp.js"></script>
+	<script src="../YelpDatabase.js"></script>
+	<script type="text/javascript" src="ajax.js"></script>
+
+
+</head>
+
+<body>
+
+	<section class="yelp">
+		<h1>This is the Yelp div </h1>
+		<label>Enter a city bellow to see most popular bars.</label>
+		<input id="yelp-city"></input>
+		<button id="click">Generate Yelp Results</button>
+		<div id="yelp-output"></div>
+	</section>
+	<div id="map">
+
+	</div>
+	<button id="map-button">Show Map</button>
+	<div>
+		<h1>This is the Twitter div </h1>
+<button id="btn-submit" onclick="runAjax()">click ajax</button>
+<p id="content-data"></p>
+	</div>
+	</main>
+
+
+
+
+</body>
+
+</html>
