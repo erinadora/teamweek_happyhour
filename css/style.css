@@ -65,15 +65,10 @@ body {
 }*/
 
 
+/*#map {
+  height: 100%;
+}
 
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-#map {
-  height: 100%;
-}
 .controls {
   margin-top: 10px;
   border: 1px solid transparent;
@@ -117,11 +112,12 @@ html, body {
 }
 #target {
   width: 345px;
-}
-
+}*/
 
 header {
   position: relative;
+  margin: auto;
+  padding: 15px;
 }
 
 #header-wrap {
@@ -148,7 +144,8 @@ header {
 }
 
 h1 {
-  font-size: 500%;
+  font-size: 600%;
+  float: left;
   margin-top: 5px!important;
 }
 
@@ -162,6 +159,11 @@ h1 {
   text-transform: uppercase;
   font-size: 125%;
   color: #000;
+}
+
+form {
+  display: block;
+  margin: auto;
 }
 
 a {
@@ -224,6 +226,15 @@ button:hover {
   text-align: center!important;
   margin: auto;
   font-family: gondola;
+  text-transform: uppercase;
+}
+
+.sidebar {
+  width: 30%;
+  height: 40%;
+  margin: auto;
+  float: left;
+  background-color: red;
 }
 
 
@@ -246,11 +257,13 @@ input:focus:-ms-input-placeholder {
   padding-bottom: 75%; // This is the aspect ratio
   height: 0;
   overflow: hidden;
+  display:none;
 }
 .google-maps iframe {
   position: absolute;
   top: 0;
   left: 0;
+  display:none;
   width: 100%!important;
   height: 100%!important;
 }
