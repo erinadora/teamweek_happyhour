@@ -21,7 +21,7 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover!important;
-  background-image: url("../images/bok.jpg");
+  background-image: url("../images/free.jpg");
 }
 
 h1 {
@@ -29,14 +29,14 @@ h1 {
   font-size: 540%;
   text-align: center;
   font-weight: 100;
-  color: #000;
+  color: #fff;
 }
 
 h2 {
   font-family: 'adam';
   font-size 125%;
   font-weight: bold;
-  color: #000;
+  color: #fff;
 }
 
 .fixed {
@@ -225,7 +225,7 @@ input search {
 }
 
 .body2 {
-  background-image: url('../images/greyscale.jpg');
+  background-image: url('../images/h3.jpeg');
   width: 100%!important;
   height: 100%!important;
   background-attachment: fixed;
@@ -264,7 +264,7 @@ html {
   font-size: 145%;
   border-radius: 5px;
   padding: 5px;
-  font-weight: 100;
+  font-weight: 300;
   color: #fff!important;
   background-color: rgba(0,0,0,0.2);
   display: none;

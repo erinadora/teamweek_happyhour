@@ -150,11 +150,13 @@ $(document).ready(function(){
 		genYelp(near);
 
 		$(".container").slideUp(500);
-		// $('body').addClass('body2').;
+		$('body').addClass('body2');
     // $('.results').slideDown(900);
+    $(".content").slideDown(100);
+
     $('.bars').fadeIn(500);
     $('.results').slideDown(1000);
-    $('ul').hide();
+
 
 		
 		var appendData = function(){
@@ -166,11 +168,6 @@ $(document).ready(function(){
 		}
 			setTimeout(appendData, 1000);
 	});
-
-$('h2').click(function(event){
-		$("ul").slideToggle();
-});
-
 				
 });
 
