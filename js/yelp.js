@@ -135,16 +135,26 @@ function genYelp(city) {
 
 $(document).ready(function(){
 
-	$('#click').click(function(){
+	$(window).scroll(function(){
+  var sticky = $('.sticky'),
+      scroll = $(window).scrollTop();
+
+  if (scroll >= 150) sticky.addClass('fixed');
+  else sticky.removeClass('fixed');
+});
+
+
+	$('form').submit(function(e){
+		e.preventDefault();
 		var near = $("#yelp-city").val();
 		genYelp(near);
 
 		$(".container").slideUp(500);
+		// $('body').addClass('body2').;
     // $('.results').slideDown(900);
-    // $(".results").delay(100);
     $('.bars').fadeIn(500);
     $('.results').slideDown(1000);
-
+    $('ul').hide();
 
 		
 		var appendData = function(){
@@ -156,6 +166,11 @@ $(document).ready(function(){
 		}
 			setTimeout(appendData, 1000);
 	});
+
+$('h2').click(function(event){
+		$("ul").slideToggle();
+});
+
 				
 });
 

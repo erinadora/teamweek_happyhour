@@ -1,60 +1,87 @@
 @font-face {
-  font-family: "Veron";
-  src: url(../fonts/VeronExtra.ttf);
+  font-family: "adam";
+  src: url(../fonts/adam.otf);
+}
+
+@font-face {
+  font-family: "Dancing";
+  src: url(../fonts/dancing.otf);
+}
+
+@font-face {
+  font-family: "codebold";
+  src: url(../fonts/codebold.otf);
 }
 
 body {
   font-family: Lato;
-  background-color: #FCFCE6;
+  color: #fff!important;
   z-index:999999;
   background-position: center;
   background-attachment: fixed;
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover!important;
+  background-image: url("../images/bok.jpg");
 }
 
 h1 {
-  font-family: Veron;
-  font-size: 440%;
+  font-family: dancing;
+  font-size: 540%;
   text-align: center;
   font-weight: 100;
   color: #000;
 }
 
 h2 {
-  font-family: Roboto;
+  font-family: 'adam';
   font-size 125%;
-  font-weight: 100;
+  font-weight: bold;
   color: #000;
 }
 
+.fixed {
+    position: fixed;
+    top:0; left:0;
+    width: 100%; 
+    content: url('../images/');
+  }
 
 .container {
   width: 100%;
-  height: 100%;
-  background-size: contain;
+  height: 1000px;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: 84% 40%;
-  background-image: url("../images/champ.png");
+  background-size: contain;
+  background-position: .5% 50%;
+/*  background-image: url("../images/champ.png");*/
 }
 
 .heada {
-  width:500px;
+  width: 50%;
   margin: auto;
 }
 
 .landing {
-  margin: 10% auto;
+  margin: auto;
   text-align: center;
 }
 
+i {
+  background-image: url('../images/martini.ico')!important;
+  background-repeat: no-repeat!important;
+  background-position: center!important;
+  background-position: contain!important;
+
+}
+
 img {
-  margin: auto!important;
-  width: 50px;
+  margin: 2% auto;
+  width: 60px;
   display: block;
   padding-top: 5px;
   z-index:999999;
-  position: 50% 0;
+  float: center;
+  top: 0;
 }
 
 form {
@@ -109,6 +136,9 @@ input[type="color"]:focus,
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+  background-size: 10%;
+  background-position: left;
+  background-repeat: no-repeat;
 }
 
 .container-4 input.search::-webkit-input-placeholder {
@@ -154,11 +184,19 @@ input[type="color"]:focus,
   outline: none;
   opacity: 1;
   margin-left: -50px;
+  background-image: url('../images/martiniredwhite.ico');
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 50%;
   }
  
 .container-4:hover button.icon:hover{
   background: white;
   border: 1px solid #ccc;
+  background-image: url('../images/martini.ico');
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 50%;
 }
 
   /**/
@@ -178,51 +216,82 @@ input search {
 /* --- Content/Results --- */
 
 .content {
-  width: 100%!important;
-  height: 100%!important;
-  background-image: url('../images/h9.jpeg');
+  width: 60%!important;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
   margin: auto;
-/*  display: none;*/
+
+}
+
+.body2 {
+  background-image: url('../images/greyscale.jpg');
+  width: 100%!important;
+  height: 100%!important;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.extraBody {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: auto;`
 }
 
 .results {
-  width: 450px;
-  margin: 5% auto;
-  padding: 15px;
+  width: 60%;
+  margin: auto!important;
+  padding: 10px;
   display: none;
 }
 
 .results h2 {
-  font-family: Roboto;
   color: #fff!important;
   font-size: 125%;
   font-weight: 200;
+  padding: 10px;
 }
 
 .bars {
-  margin: 20px auto;
+  margin: 15px;
   text-align: center;
   font-size: 145%;
   border-radius: 5px;
+  padding: 5px;
   font-weight: 100;
-  padding: 15px;
   color: #fff!important;
-  border: 1px solid #ccc;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,0.2);
   display: none;
 }
 
 .bars ul {
   text-align: center;
-  margin-right: 30px;
+  margin-right: 50px!important;
 }
 
 .bars ul li {
   list-style-type: none!important;
   margin: auto;
+  text-align: center;
+  width: 250px;
+  padding: 5px;
 
+}
+
+.bars h2 {
+  padding: none!important;
+  margin-top: 0!important;
+  margin: 0!important;
+  margin-bottom: none!important;
+  font-size: 200%;
+  cursor: pointer;
+  font-family: codebold;
+  font-size: 250%;
 }
 
